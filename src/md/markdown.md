@@ -34,3 +34,8 @@
 
 8. 인용
    '>' 기호를 사용한다.
+
+참고
+[위키백과](https://ko.wikipedia.org/wiki/%EB%A7%88%ED%81%AC%EB%8B%A4%EC%9A%B4)
+[마크다운 공식사이트](https://daringfireball.net/projects/markdown/)
+ChatGPT

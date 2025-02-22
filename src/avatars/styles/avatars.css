@@ -1,14 +1,13 @@
 body{
   width: 396px;
   height: 195px;
-  margin: 0;
+  padding: 100px;
+  margin: 0 auto;
+  background-color: white;
 }
 
 .avatars {
-  border: 1px solid blue;
-  list-style-type: none;
   font-size: 0;
-  padding: 20px;
   text-align: center;
   display: inline-block;
  
@@ -25,28 +24,27 @@ body{
 }
 
 .avatars__list li {
-  display: inline-block;
   position: relative;
 }
 
 .avatars__list li::after {
   content: "";
   position: absolute;
-  width: 17px;
-  height: 17px;
+  width: 16px;
+  height: 16px;
   border-radius: 50%;
-  top: 50px;
-  left: 55px;
+  top: 47px;
+  left: 57px;
   border :1px solid white;
  
 }
 
 .avatars_gray::after{
-  background-color: rgb(214, 214, 214);
+  background-color: #dbdbdb;
 }
 
 .avatars_green::after{
-  background-color: rgb(97, 253, 154);
+  background-color: #4cfe88;
 }
 
 .avatars__list li img {

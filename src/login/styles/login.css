@@ -1,0 +1,40 @@
+.login-container {
+  border: 1px solid black;
+  width: 320px;
+  height: 480px;
+  padding-inline: 20px;
+  margin: auto;
+
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+
+  .login-title {
+    background: yellow;
+  }
+
+  .login-field {
+    background: aqua;
+    border: 1px solid black;
+
+    width: 100%;
+    height: 48px;
+  }
+
+  .login-button {
+    background: greenyellow;
+
+    button {
+      width: 100%;
+      height: 48px;
+    }
+  }
+
+  .login-checkbox {
+    background: palegoldenrod;
+  }
+
+  .login-state {
+    background: pink;
+  }
+}

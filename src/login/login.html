@@ -19,16 +19,71 @@
     <link rel="stylesheet" href="/src/login/styles/login.css" />
   </head>
   <body>
-    <div class="login-container">
-      <div class="login-title">
-        <img src="/src/login/svg/naver-logo.svg" alt="네이버 로고" />
+
+    <!-- 로고 컴퍼넌트 -->
+    <div class="login-logo">
+      <img src="/src/login/svg/naver-logo.svg" alt="네이버 로고" />
+    </div>
+
+    <!-- 입력 폼 컴퍼넌트 -->
+    <div class="input">
+      <div class="login-id">
+        <label for="userid" class="sr-only">아이디(이메일)</label>
+        <input
+          type="text"
+          id="userid"
+          name="userid"
+          required
+          placeholder="아이디(이메일)"
+        />
       </div>
-      <div class="login-id login-field">아이디</div>
-      <div class="login-password login-field">비밀번호</div>
-      <div class="login-button"><button>로그인</button></div>
+      <div class="login-password">
+        <label for="userpassword" class="sr-only">비밀번호</label>
+        <input
+          type="text"
+          id="userpassword"
+          name="userpassword"
+          required
+          placeholder="비밀번호"
+        />
+      </div>
+    </div>
+
+    <!-- 로그인 버튼 컴퍼넌트 -->
+    <div class="login-button">
+      <button>로그인</button>
+    </div>
+
+    <!-- 체크박스 컴퍼넌트 -->
+    <div class="login-checkbox">
+      <input type="checkbox" id="toggle" class="toggle">
+      <label for="toggle" class="toggle-label">
+     <img src="/src/login/svg/unchecked.svg" alt="Off 상태" class="toggle-image">
+     </label>
+    </div>
+
+    <!-- 로그인 상태유지 컴퍼넌트 -->
+    <div class="login-state"><span>로그인 상태 유지</span></div>
+
+    <!-- 체크박스, 로그인상태유지 -->
+    <div class="checkbox-state-wrapper">
       <div class="login-checkbox">
-        <img src="/src/login/svg/unchecked.svg" alt="로그인 상태 유지 체크되어 있지 않음" />
+        <input type="checkbox" id="toggle" class="toggle">
+        <label for="toggle" class="toggle-label">
+       <img src="/src/login/svg/unchecked.svg" alt="Off 상태" class="toggle-image">
+       </label>
       </div>
-      <div class="login-state">로그인 상태 유지</div>
+      <div class="login-state"><span>로그인 상태 유지</span></div>
+    </div>
+    
+    <hr />
+    <!-- 최종본 -->
+    <div class="login-container">
+
+      
+      
+      
+      
+      
   </body>
 </html>

@@ -16,156 +16,12 @@
       crossorigin
       href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css"
     />
-    <link rel="stylesheet" href="/src/login/styles/login.css" />
+    <link rel="stylesheet" href="./styles/login.css" />
   </head>
   <body>
-    <!-- 로고 컴퍼넌트 -->
-    <!-- <div class="login-logo">
-      <img src="/src/login/svg/naver-logo.svg" alt="네이버 로고" />
-    </div> -->
-
-    <!-- 입력 폼 컴퍼넌트 -->
-    <!-- <div class="input">
-      <div class="login-id">
-        <label for="userid" class="sr-only">아이디(이메일)</label>
-        <input
-          type="text"
-          id="userid"
-          name="userid"
-          required
-          placeholder="아이디(이메일)"
-        />
-      </div>
-      <div class="login-password">
-        <label for="userpassword" class="sr-only">비밀번호</label>
-        <input
-          type="text"
-          id="userpassword"
-          name="userpassword"
-          required
-          placeholder="비밀번호"
-        />
-      </div>
-    </div> -->
-
-    <!-- 로그인 버튼 컴퍼넌트 -->
-    <!-- <div class="login-button">
-      <button>로그인</button>
-    </div> -->
-
-    <!-- 체크박스 컴퍼넌트 -->
-    <!-- <div class="login-checkbox">
-      <input type="checkbox" id="toggle" class="toggle">
-      <label for="toggle" class="toggle-label">
-     <img src="/src/login/svg/unchecked.svg" alt="Off 상태" class="toggle-image">
-     </label>
-    </div> -->
-
-    <!-- 로그인 상태유지 컴퍼넌트 -->
-    <!-- <div class="login-state"><span>로그인 상태 유지</span></div> -->
-
-    <!-- ip보안 박스 -->
-    <!-- <div class="login-ip-wrapper">
-      <a href="./pages/ip_security.html">IP보안</a>
-      <div class="login-ip-onoff">
-        <input type="checkbox" id="on-off-toggle">
-         <label for="on-off-toggle">
-          <strong></strong>
-         </label>
-      </input>
-      </div>
-    </div> -->
-
-    <!-- 체크박스, 로그인상태유지 -->
-    <!-- <div class="checkbox-state-wrapper">
-      <div class="login-checkbox">
-        <input type="checkbox" id="toggle" class="toggle">
-        <label for="toggle" class="toggle-label">
-       <img src="/src/login/svg/unchecked.svg" alt="Off 상태" class="toggle-image">
-       </label>
-      </div>
-      <div class="login-state"><span>로그인 상태 유지</span></div>
-    </div> -->
-
-    <!-- 보안박스, 로그인 상태유지 -->
-    <!-- <div class="login-ip-state-wrapper">
-      <div class="login-ip-wrapper">
-        <div class="login-ip">IP보안</div>
-        <div class="login-ip-onoff">
-          <input type="checkbox" id="on-off-toggle">
-           <label for="on-off-toggle">
-            <strong></strong>
-           </label>
-        </input>
-        </div>
-      </div>
-      <div class="checkbox-state-wrapper">
-        <div class="login-checkbox">
-          <input type="checkbox" id="toggle" class="toggle">
-          <label for="toggle" class="toggle-label">
-         <img src="/src/login/svg/unchecked.svg" alt="Off 상태" class="toggle-image">
-         </label>
-        </div>
-        <div class="login-state"><span>로그인 상태 유지</span></div>
-      </div>
-    </div> -->
-    
-    <!-- 로고 제외 정렬 -->
-    <!-- <div class="input-button-checkbox-state-wrapper">
-      <div class="input">
-        <div class="login-id">
-          <label for="userid" class="sr-only">아이디(이메일)</label>
-          <input
-            type="text"
-            id="userid"
-            name="userid"
-            required
-            placeholder="아이디(이메일)"
-          />
-        </div>
-        <div class="login-password">
-          <label for="userpassword" class="sr-only">비밀번호</label>
-          <input
-            type="text"
-            id="userpassword"
-            name="userpassword"
-            required
-            placeholder="비밀번호"
-          />
-        </div>
-      </div>
-      <div class="login-button">
-        <button>로그인</button>
-      </div>
-      <div class="checkbox-state-wrapper">
-        <div class="login-checkbox">
-          <input type="checkbox" id="toggle" class="toggle" />
-          <label for="toggle" class="toggle-label">
-            <img
-              src="/src/login/svg/unchecked.svg"
-              alt="Off 상태"
-              class="toggle-image"
-            />
-          </label>
-        </div>
-        <div class="login-state"><span>로그인 상태 유지</span></div>
-      </div>
-      <div class="login-ip-wrapper">
-        <a href="./pages/ip_security.html">IP보안</a>
-        <div class="login-ip-onoff">
-          <input type="checkbox" id="on-off-toggle">
-           <label for="on-off-toggle">
-            <strong></strong>
-           </label>
-        </input>
-        </div>
-      </div>
-    </div> -->
-
-    <!-- 최종본 -->
     <div class="login-container">
       <div class="login-logo">
-        <img src="/src/login/svg/naver-logo.svg" alt="네이버 로고" />
+        <img src="./svg/naver-logo.svg" alt="네이버 로고" />
       </div>
       <div class="input-button-checkbox-state-wrapper">
         <form class="input">
@@ -189,13 +45,14 @@
               placeholder="비밀번호"
             />
           </div>
+          <div class="login-button">
+            <button type="submit">로그인</button>
+          </div>
         </form>
-        <div class="login-button">
-          <button type="submit">로그인</button>
-        </div>
+        
         <div class="login-ip-state-wrapper">
           <div class="login-ip-wrapper">
-            <a href="./pages/ip_security.html">IP보안</a>
+            <a href="./ip_security.html">IP보안</a>
             <div class="login-ip-onoff">
               <input type="checkbox" id="on-off-toggle">
                <label for="on-off-toggle">
@@ -208,7 +65,7 @@
             <div class="login-checkbox" tabindex="3">
               <input type="checkbox" id="toggle" class="toggle">
               <label for="toggle" class="toggle-label">
-             <img src="/src/login/svg/unchecked.svg" alt="Off 상태" class="toggle-image">
+             <img src="./svg/unchecked.svg" alt="Off 상태" class="toggle-image">
              </label>
             </div>
             <div class="login-state"><span>로그인 상태 유지</span></div>

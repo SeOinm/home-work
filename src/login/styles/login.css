@@ -75,20 +75,8 @@ body {
   }
 }
 
-/* 로그인 상태유지 컴퍼넌트 */
-.login-state {
-  font-size: 14px;
-}
-
-/* ip보안 컴퍼넌트 */
-.login-ip {
-  display: none;
-  font-size: 14px;
-}
-
 /* ip보안 on,off 컴퍼넌트 */
 .login-ip-onoff {
-  display: none;
   color: #999999;
   font-size: 14px;
 
@@ -111,9 +99,30 @@ body {
 
 /* ip보안 박스 */
 .login-ip-wrapper {
+  display: none;
+
+  a {
+    text-decoration: none;
+    color: black;
+    font-size: 14px;
+  }
+
+  @media (min-width: 786px) {
+    display: flex;
+    gap: 5px;
+  }
+}
+
+.login-ip-state-wrapper {
   display: flex;
   flex-flow: row nowrap;
-  gap: 0.25rem;
+  justify-content: space-between;
+
+  @media (min-width: 786px) {
+    display: flex;
+    flex-flow: row-reverse nowrap;
+    justify-content: space-between;
+  }
 }
 
 /* 로그인 상태유지랑 체크박스 합친거 */
@@ -121,35 +130,15 @@ body {
   display: flex;
   flex-flow: row nowrap;
   gap: 0.5rem;
+  margin-left: auto;
 
   .login-state {
     display: flex;
     align-items: center;
   }
-}
-
-/* 로고 제외 다 합친거 */
-.input-button-checkbox-state-wrapper {
-  margin: 20px;
-  display: flex;
-  flex-flow: column nowrap;
-
-  .checkbox-state-wrapper {
-    margin-left: auto;
-  }
 
   @media (min-width: 786px) {
-    display: flex;
-    .checkbox-state-wrapper {
-      display: flex;
-    }
-
-    .login-ip-wrapper {
-      display: flex;
-      * {
-        display: inherit;
-      }
-    }
+    margin-left: 0;
   }
 }
 
@@ -163,6 +152,11 @@ body {
 
   .login-button {
     margin-bottom: 5px;
+  }
+
+  @media (min-width: 786px) {
+    width: 500px;
+    margin: 150px auto;
   }
 }
 

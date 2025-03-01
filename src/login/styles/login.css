@@ -80,6 +80,42 @@ body {
   font-size: 14px;
 }
 
+/* ip보안 컴퍼넌트 */
+.login-ip {
+  display: none;
+  font-size: 14px;
+}
+
+/* ip보안 on,off 컴퍼넌트 */
+.login-ip-onoff {
+  display: none;
+  color: #999999;
+  font-size: 14px;
+
+  #on-off-toggle {
+    display: none;
+  }
+
+  #on-off-toggle:checked + label {
+    color: #03cf5d;
+  }
+
+  #on-off-toggle:checked + label strong::before {
+    content: "ON";
+  }
+
+  #on-off-toggle:not(:checked) + label strong::before {
+    content: "OFF";
+  }
+}
+
+/* ip보안 박스 */
+.login-ip-wrapper {
+  display: flex;
+  flex-flow: row nowrap;
+  gap: 0.25rem;
+}
+
 /* 로그인 상태유지랑 체크박스 합친거 */
 .checkbox-state-wrapper {
   display: flex;
@@ -101,15 +137,33 @@ body {
   .checkbox-state-wrapper {
     margin-left: auto;
   }
+
+  @media (min-width: 786px) {
+    display: flex;
+    .checkbox-state-wrapper {
+      display: flex;
+    }
+
+    .login-ip-wrapper {
+      display: flex;
+      * {
+        display: inherit;
+      }
+    }
+  }
 }
 
 /* 최종 */
 .login-container {
-  padding-inline: 20px;
   margin: 10px;
+  margin-top: 150px;
   display: flex;
   flex-flow: column nowrap;
   justify-content: center;
+
+  .login-button {
+    margin-bottom: 5px;
+  }
 }
 
 .sr-only {

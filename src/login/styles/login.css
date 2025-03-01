@@ -9,7 +9,9 @@ body {
 
 /* 로고 */
 .login-logo {
-  display: block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 /* 입력 폼 */
@@ -90,49 +92,25 @@ body {
   }
 }
 
-/* 최종 */
-/* .login-container {
-  border: 1px solid black;
-  width: 320px;
-  height: 480px;
-  padding-inline: 20px;
-  margin: auto;
+/* 로고 제외 다 합친거 */
+.input-button-checkbox-state-wrapper {
+  margin: 20px;
+  display: flex;
+  flex-flow: column nowrap;
 
+  .checkbox-state-wrapper {
+    margin-left: auto;
+  }
+}
+
+/* 최종 */
+.login-container {
+  padding-inline: 20px;
+  margin: 10px;
   display: flex;
   flex-flow: column nowrap;
   justify-content: center;
-
-  .login-button {
-    background: greenyellow;
-
-    button {
-      width: 100%;
-      height: 48px;
-    }
-  }
-
-  .input {
-    display: flex;
-    flex-flow: column nowrap;
-
-    input {
-      block-size: 1.5rem;
-      border: 1px solid #dadada;
-      font-size: 0.875rem;
-      padding: 10px;
-      margin: 8px;
-      flex: 1 0 0;
-    }
-  }
-
-  .login-checkbox {
-    background: palegoldenrod;
-  }
-
-  .login-state {
-    background: pink;
-  }
-} */
+}
 
 .sr-only {
   position: absolute;

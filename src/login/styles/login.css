@@ -3,7 +3,7 @@
 @import "/src/common/base.css";
 
 :root {
-  --font-size: 14px;
+  --font-size: 16px;
   --text-color: #121212;
   --naver-color: #03cf5d;
 }
@@ -27,14 +27,26 @@ body {
   .login-id,
   .login-password {
     display: flex;
+    flex-flow: column nowrap;
     flex: 1 0 0;
+    gap: 0.3125rem;
+
+    .error-message {
+      display: none;
+      color: red;
+      font-size: 12px;
+    }
+
+    input:invalid:focus + .error-message {
+      display: block;
+    }
   }
 
   input {
     block-size: 1.5rem;
     border: 1px solid #dadada;
     font-size: 0.875rem;
-    padding: 0.625rem;
+    padding: 0.9375rem;
     flex: 1 0 0;
 
     &:focus {
@@ -48,6 +60,7 @@ body {
 /* 로그인 버튼 */
 .login-button {
   button {
+    font-size: 1rem;
     background-color: var(--naver-color);
     color: #fff;
     border: 0px;
@@ -69,7 +82,7 @@ body {
   }
 
   .toggle-image {
-    width: 1.4375rem;
+    width: 1.5rem;
   }
 
   .toggle:checked + .toggle-label .toggle-image {

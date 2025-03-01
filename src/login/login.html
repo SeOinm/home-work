@@ -34,6 +34,7 @@
               required
               placeholder="아이디(이메일)"
             />
+            <span class="error-message" id="userid-error">아이디는 이메일 형식으로 입력해주세요.</span>
           </div>
           <div class="login-password" tabindex="2">
             <label for="userpassword" class="sr-only">비밀번호</label>
@@ -44,12 +45,12 @@
               required
               placeholder="비밀번호"
             />
+            <span class="error-message" id="password-error">비밀번호는 10자리 이상 입력해주세요.</span>
           </div>
           <div class="login-button">
             <button type="submit">로그인</button>
           </div>
         </form>
-        
         <div class="login-ip-state-wrapper">
           <div class="login-ip-wrapper">
             <a href="./pages/ip_security.html">IP보안</a>

@@ -1,5 +1,4 @@
 @import "/src/common/best-reset.css";
-@import "/src/common/theme.css";
 @import "/src/common/a11y.css";
 @import "/src/common/base.css";
 
@@ -9,17 +8,15 @@ body {
 
 /* 로고 */
 .login-logo {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  margin: 0 auto;
 }
 
 /* 입력 폼 */
 .input {
   display: flex;
   flex-flow: column nowrap;
-  gap: 10px;
-  margin-block: 10px;
+  gap: 0.625rem;
+  margin-block: 0.625rem;
 
   .login-id,
   .login-password {
@@ -31,7 +28,7 @@ body {
     block-size: 1.5rem;
     border: 1px solid #dadada;
     font-size: 0.875rem;
-    padding: 10px;
+    padding: 0.625rem;
     flex: 1 0 0;
 
     &:focus {
@@ -49,7 +46,7 @@ body {
     color: #fff;
     border: 0px;
     width: 100%;
-    height: 48px;
+    height: 3rem;
   }
 }
 
@@ -66,19 +63,18 @@ body {
   }
 
   .toggle-image {
-    width: 23px;
-    transition: opacity 0.3s ease;
+    width: 1.4375rem;
   }
 
   .toggle:checked + .toggle-label .toggle-image {
-    content: url("/src/login/svg/checked.svg"); /* 체크박스를 선택하면 "on-image.jpg"로 변경 */
+    content: url("/src/login/svg/checked.svg");
   }
 }
 
 /* ip보안 on,off 컴퍼넌트 */
 .login-ip-onoff {
   color: #999999;
-  font-size: 14px;
+  font-size: 0.875rem;
 
   #on-off-toggle {
     display: none;
@@ -104,7 +100,7 @@ body {
   a {
     text-decoration: none;
     color: black;
-    font-size: 14px;
+    font-size: 0.875rem;
   }
 
   @media (min-width: 786px) {
@@ -144,14 +140,14 @@ body {
 
 /* 최종 */
 .login-container {
-  margin: 10px;
-  margin-top: 150px;
+  margin: 0.625rem;
+  margin-top: 9.375rem;
   display: flex;
   flex-flow: column nowrap;
   justify-content: center;
 
   .login-button {
-    margin-bottom: 5px;
+    margin-bottom: 0.3125rem;
   }
 
   @media (min-width: 786px) {

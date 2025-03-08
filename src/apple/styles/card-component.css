@@ -2,28 +2,102 @@
 @import "./theme.css";
 @import "./base.css";
 
-h1 {
-  font-size: var(--large-text);
-}
-
-h2 {
-  font-size: var(--base-text);
-}
-
-p {
-  font-size: var(--small-text);
-}
-
-button {
-  background: var(--blue-100);
-  color: var(--white);
-  border: none;
-  border-radius: 24px;
-  font-size: var(--xx-small-text);
-
-  padding: var(--xx-small-text);
-}
-
 .card {
   display: grid;
+  width: 100%;
+  height: var(--size);
+  background: url(../products/ipad_pro.jpeg) no-repeat center / cover;
+
+  .card-text-white {
+    text-align: center;
+
+    .card-title {
+      font-size: var(--large-text);
+      margin-top: var(--large-spacing);
+      margin-bottom: var(--small-spacing);
+      color: var(--white);
+      font-weight: bold;
+    }
+
+    .card-subtitle {
+      font-size: var(--base-text);
+      color: var(--white);
+      margin-bottom: var(--small-spacing);
+    }
+
+    .card-info {
+      font-size: var(--small-text);
+      color: var(--gray);
+      margin-block: var(--x-small-spacing);
+    }
+
+    @media (min-width: 1024px) {
+      .card-title {
+        font-size: var(--extra-large-text);
+      }
+      .card-subtitle {
+        font-size: var(--medium-text);
+      }
+    }
+  }
+
+  .card-text-black {
+    text-align: center;
+
+    .card-title {
+      font-size: var(--large-text);
+      margin-top: var(--large-spacing);
+      margin-bottom: var(--small-spacing);
+      font-weight: bold;
+    }
+
+    .card-subtitle {
+      font-size: var(--base-text);
+      margin-bottom: var(--small-spacing);
+    }
+
+    .card-info {
+      font-size: var(--small-text);
+      color: var(--gray);
+      margin-block: var(--x-small-spacing);
+    }
+
+    @media (min-width: 1024px) {
+      .card-title {
+        font-size: var(--extra-large-text);
+      }
+      .card-subtitle {
+        font-size: var(--medium-text);
+      }
+    }
+  }
+
+  .card-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: var(--base-spacing);
+
+    .btn {
+      background: var(--blue-100);
+      color: var(--white);
+      border: none;
+      border-radius: 24px;
+      font-size: var(--xx-small-text);
+      padding: var(--xx-small-text);
+
+      display: inline-flex;
+    }
+
+    .price {
+      background: transparent;
+      color: var(--blue-100);
+      border: 1px solid var(--blue-100);
+
+      &:hover {
+        background: var(--blue-100);
+        color: var(--white);
+      }
+    }
+  }
 }

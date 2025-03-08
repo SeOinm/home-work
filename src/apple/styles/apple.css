@@ -5,6 +5,7 @@
 .container {
   display: grid;
   grid-template-columns: repeat(1, 1fr);
+  gap: 1rem;
 
   .ipad-pro {
     background: url(../products/ipad_pro.jpeg) no-repeat center / cover;
@@ -34,6 +35,7 @@
   .small {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
+    gap: 1rem;
 
     @media (min-width: 1024px) {
       grid-template-columns: repeat(2, 1fr);

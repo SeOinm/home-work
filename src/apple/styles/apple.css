@@ -6,10 +6,6 @@
   display: grid;
   grid-template-columns: repeat(1, 1fr);
 
-  /* @media (min-width: 1024px) {
-    grid-template-columns: repeat(2, 1fr);
-  } */
-
   .ipad-pro {
     background: url(../products/ipad_pro.jpeg) no-repeat center / cover;
 
@@ -36,6 +32,12 @@
   }
 
   .small {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+
+    @media (min-width: 1024px) {
+      grid-template-columns: repeat(2, 1fr);
+    }
   }
 
   .iphone15 {

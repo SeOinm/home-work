@@ -6,7 +6,7 @@
   display: grid;
   width: 100%;
   height: var(--size);
-  background: url(../products/ipad_pro.jpeg) no-repeat center / cover;
+  /* background: url(../products/ipad_pro.jpeg) no-repeat center / cover; */
 
   .card-text-white {
     text-align: center;
